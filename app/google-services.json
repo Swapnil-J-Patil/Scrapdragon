@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1017598770278",
+    "firebase_url": "https://scrapdragon-f0418-default-rtdb.firebaseio.com",
+    "project_id": "scrapdragon-f0418",
+    "storage_bucket": "scrapdragon-f0418.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017598770278:android:a8c44d034d5439920081a7",
+        "android_client_info": {
+          "package_name": "com.example.scrapdragon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017598770278-61blj18bss57adr4c026j065be22nutp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scrapdragon",
+            "certificate_hash": "9d4b4bad62b3048700868baf862109a6ce19c6fe"
+          }
+        },
+        {
+          "client_id": "1017598770278-8dt0tmia2q1e12jh0pjulbjrej55tb3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVic5iPVgkSmNPTON_1oNEX_5NtXo1n84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017598770278-84e3c8fla9393e3jmbe87pqpodn1g52i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
