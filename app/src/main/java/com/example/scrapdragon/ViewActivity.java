@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -23,14 +22,14 @@ TextView productName,cityName,mobileNumber,productdes,productprice,sellersname;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view);
-        imageView=findViewById(R.id.view_itemimage);
-        productName=findViewById(R.id.view_itemtvHeadline);
-        cityName=findViewById(R.id.view_itemcity);
-        mobileNumber=findViewById(R.id.view_itemmobile);
-        productdes=findViewById(R.id.view_itemtvDescription);
-        productprice=findViewById(R.id.view_itemprice);
-        sellersname=findViewById(R.id.view_sellerName);
-        btn_contact=findViewById(R.id.view_btn_contact);
+        imageView=findViewById(R.id.itemprevious_productimage);
+        productName=findViewById(R.id.itemprevious_productname);
+        cityName=findViewById(R.id.itemprevious_city);
+        mobileNumber=findViewById(R.id.itemprevious_sellersmobile);
+        productdes=findViewById(R.id.itemprevious_previousdescription);
+        productprice=findViewById(R.id.itemprevious_price);
+        sellersname=findViewById(R.id.itemprevious_sellersname);
+        btn_contact=findViewById(R.id.itemprevious_btn_cancel);
 
         Picasso.get().load(getIntent().getStringExtra("view_itemimage"))
                 .placeholder(R.drawable.uploadimg)

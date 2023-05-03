@@ -219,7 +219,6 @@ public class Login extends AppCompatActivity {
                             // If sign in fails, display a message to the user.
                             progressDialog.dismiss();
                             Toast.makeText(Login.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
-                            updateUI(null);
                         }
                     }
                 });
@@ -233,5 +232,4 @@ public class Login extends AppCompatActivity {
         overridePendingTransition(R.anim.left_slide_out, R.anim.right_slide_in);
         finish();
     }
-
 }

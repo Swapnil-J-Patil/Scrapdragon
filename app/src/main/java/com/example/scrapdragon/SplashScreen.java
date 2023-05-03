@@ -5,24 +5,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
     private  static int SPLASH_SCREEN= 2800;
     private Intent serviceIntent;
     ImageView imageView;
-    TextView textView1,textView2;
+    TextView textView1;
     Animation top, bottom;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
         imageView=findViewById(R.id.imageView);
         textView1=findViewById(R.id.textView1);
 
@@ -31,18 +29,34 @@ public class MainActivity extends AppCompatActivity {
 
         imageView.setAnimation(top);
         textView1.setAnimation(bottom);
-        serviceIntent=new Intent(getApplicationContext(),MyService.class);
-        startService(new Intent(getApplicationContext(),MyService.class));
+        serviceIntent=new Intent(getApplicationContext(), MusicService.class);
+        startService(new Intent(getApplicationContext(), MusicService.class));
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(MainActivity.this, Login.class);
+                Intent intent=new Intent(SplashScreen.this, Login.class);
                 startActivity(intent);
-                stopService(new Intent(getApplicationContext(),MyService.class));
+                stopService(new Intent(getApplicationContext(), MusicService.class));
                 overridePendingTransition(R.anim.up_slide_out,R.anim.down_slide_in);
                 finish();
             }
         },SPLASH_SCREEN);
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopService(new Intent(getApplicationContext(), MusicService.class));
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopService(new Intent(getApplicationContext(), MusicService.class));
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        stopService(new Intent(getApplicationContext(), MusicService.class));
+    }
+
 }

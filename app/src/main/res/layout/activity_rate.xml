@@ -16,7 +16,7 @@
 
 
         <TextView
-            android:id="@+id/view_itemtvHeadline"
+            android:id="@+id/itemprevious_productname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="184dp"
@@ -35,10 +35,10 @@
             android:layout_marginTop="24dp"
             android:progressBackgroundTint="#FDE59C"
             android:progressTint="#FF9800"
-            app:layout_constraintEnd_toEndOf="@+id/view_itemtvHeadline"
+            app:layout_constraintEnd_toEndOf="@+id/itemprevious_productname"
             app:layout_constraintHorizontal_bias="0.481"
-            app:layout_constraintStart_toStartOf="@+id/view_itemtvHeadline"
-            app:layout_constraintTop_toBottomOf="@+id/view_itemtvHeadline" />
+            app:layout_constraintStart_toStartOf="@+id/itemprevious_productname"
+            app:layout_constraintTop_toBottomOf="@+id/itemprevious_productname" />
 
         <EditText
                     android:id="@+id/writereview"

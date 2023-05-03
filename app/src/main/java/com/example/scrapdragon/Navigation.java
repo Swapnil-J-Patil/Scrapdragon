@@ -4,9 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -98,7 +95,7 @@ public class Navigation extends AppCompatActivity {
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
+                Intent intent=new Intent(getApplicationContext(), BuyActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.left_slide_in,R.anim.right_slide_out);
             }
@@ -106,7 +103,7 @@ public class Navigation extends AppCompatActivity {
         sell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),Product.class);
+                Intent intent=new Intent(getApplicationContext(), SellActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.left_slide_out, R.anim.right_slide_in);
             }

@@ -14,7 +14,9 @@
         android:theme="@style/Theme.Scrapdragon"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".PreviousOrders"
+            android:exported="false" />
         <activity
             android:name=".OrderPlaced"
             android:exported="false" />
@@ -28,10 +30,10 @@
             android:name=".Navigation"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".BuyActivity"
             android:exported="false" />
         <activity
-            android:name=".Product"
+            android:name=".SellActivity"
             android:exported="false" />
         <activity
             android:name=".Registration"
@@ -40,7 +42,7 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +51,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".MyService" />
+        <service android:name=".MusicService" />
 
         <meta-data
             android:name="preloaded_fonts"

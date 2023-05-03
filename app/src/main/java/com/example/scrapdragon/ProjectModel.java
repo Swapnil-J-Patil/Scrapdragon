@@ -2,20 +2,30 @@ package com.example.scrapdragon;
 
 public class ProjectModel {
 
-   private String Product,City,MobileNumber,ProductDescription,ProductPrice,SellersName;
+   private String Product,City,MobileNumber,ProductDescription,ProductPrice,SellersName,SellersEmail,nodekey;
    private String ImageUrl;
 
     public ProjectModel() {
     }
 
-    public ProjectModel(String product, String city, String mobileNumber, String productDescription, String productPrice, String sellersName, String imageUrl) {
+    public ProjectModel(String product, String city, String mobileNumber, String productDescription, String productPrice, String sellersName, String sellersEmail, String nodekey, String imageUrl) {
         Product = product;
         City = city;
         MobileNumber = mobileNumber;
         ProductDescription = productDescription;
         ProductPrice = productPrice;
         SellersName = sellersName;
+        SellersEmail = sellersEmail;
+        this.nodekey = nodekey;
         ImageUrl = imageUrl;
+    }
+
+    public String getNodekey() {
+        return nodekey;
+    }
+
+    public void setNodekey(String nodekey) {
+        this.nodekey = nodekey;
     }
 
     public String getProduct() {
@@ -52,6 +62,14 @@ public class ProjectModel {
 
     public void setProductDescription(String productDescription) {
         ProductDescription = productDescription;
+    }
+
+    public String getSellersEmail() {
+        return SellersEmail;
+    }
+
+    public void setSellersEmail(String sellersEmail) {
+        SellersEmail = sellersEmail;
     }
 
     public String getProductPrice() {

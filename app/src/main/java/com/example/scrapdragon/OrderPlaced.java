@@ -9,8 +9,6 @@ import android.widget.Toast;
 
 public class OrderPlaced extends AppCompatActivity {
     private  static int SPLASH_SCREEN= 2800;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +16,7 @@ public class OrderPlaced extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(OrderPlaced.this, Navigation.class);
+                Intent intent=new Intent(OrderPlaced.this, SellActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.up_slide_out,R.anim.down_slide_in);
                 finish();
@@ -27,7 +25,8 @@ public class OrderPlaced extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(OrderPlaced.this, "Your Request Has Been Posted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(OrderPlaced.this, "Your Order Has Been Posted", Toast.LENGTH_SHORT).show();
+                finish();
             }
         },SPLASH_SCREEN);
     }

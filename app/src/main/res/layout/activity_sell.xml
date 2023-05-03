@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Product"
+    tools:context=".SellActivity"
     android:background="@color/white">
 
     <ScrollView
@@ -17,6 +17,18 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/baseline_shopping_cart_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imageViewAdd"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageViewAdd"
@@ -95,15 +107,13 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/inputdescription" />
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <EditText
                 android:id="@+id/inputexpectedprice"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
                 android:background="@drawable/input_bgblack"
                 android:drawableLeft="@drawable/currencyrupee"
                 android:drawablePadding="10dp"
@@ -115,10 +125,10 @@
                 android:paddingBottom="15dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/inputdescription"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cityname" />
+                app:layout_constraintStart_toStartOf="@+id/inputdescription"
+                app:layout_constraintTop_toBottomOf="@+id/inputdescription" />
 
             <EditText
                 android:id="@+id/cityname"
@@ -131,6 +141,28 @@
                 android:drawableLeft="@drawable/baseline_location_on_24"
                 android:drawablePadding="10dp"
                 android:hint="Enter City Name"
+                android:paddingLeft="13dp"
+                android:paddingTop="15dp"
+                android:paddingRight="13dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_ID" />
+
+            <EditText
+                android:id="@+id/email_ID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/input_bgblack"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:hint="Enter Email ID"
                 android:paddingLeft="13dp"
                 android:paddingTop="15dp"
                 android:paddingRight="13dp"
@@ -181,6 +213,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageViewAdd" />
 
             <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Personal Details"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/inputexpectedprice"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/inputexpectedprice"
+                app:layout_constraintTop_toBottomOf="@+id/inputexpectedprice" />
+
+            <TextView
                 android:id="@+id/textviewProgress"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -211,9 +258,7 @@
                 android:id="@+id/btn_upload"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/buttonbg"
                 android:paddingLeft="13dp"
@@ -226,9 +271,9 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/inputName"
-                app:layout_constraintStart_toStartOf="@+id/inputName"
-                app:layout_constraintTop_toBottomOf="@+id/inputexpectedprice"
+                app:layout_constraintEnd_toEndOf="@+id/cityname"
+                app:layout_constraintStart_toStartOf="@+id/cityname"
+                app:layout_constraintTop_toBottomOf="@+id/cityname"
                 app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

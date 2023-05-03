@@ -73,13 +73,13 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ViewHold
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            productImage=itemView.findViewById(R.id.view_itemimage);
-            productName=itemView.findViewById(R.id.view_itemtvHeadline);
-            cityName=itemView.findViewById(R.id.view_itemcity);
-            mobileNumber=itemView.findViewById(R.id.view_itemmobile);
-            productdes=itemView.findViewById(R.id.view_itemtvDescription);
-            productprice=itemView.findViewById(R.id.view_itemprice);
-            sellersname=itemView.findViewById(R.id.view_sellerName);
+            productImage=itemView.findViewById(R.id.itemprevious_productimage);
+            productName=itemView.findViewById(R.id.itemprevious_productname);
+            cityName=itemView.findViewById(R.id.itemprevious_city);
+            mobileNumber=itemView.findViewById(R.id.itemprevious_sellersmobile);
+            productdes=itemView.findViewById(R.id.itemprevious_previousdescription);
+            productprice=itemView.findViewById(R.id.itemprevious_price);
+            sellersname=itemView.findViewById(R.id.itemprevious_sellersname);
         }
     }
 }
