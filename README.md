@@ -1,6 +1,6 @@
 # Scrapdragon
 E-waste Marketplace App (Scrapdragon is an app where you can transform waste into value)<br>
-APK Link: https://drive.google.com/file/d/12sRc7YgsJ5SgGnkn8tu3RHVxu_NZUS7t/view?usp=drive_link
+APK Link:  https://drive.google.com/drive/folders/1KG93bX1l6dLwzotzkBeUYvYwdNWwrizT?usp=sharing
 <br><br>Splashcreen:<br><br>
 ![splashscreen](https://github.com/Swapnil-J-Patil/QuickHeadlines/assets/129786110/366d6a31-6a80-4a69-b161-43cc1a74b942)<br><br>Authentication:<br><br>
 ![auth](https://github.com/Swapnil-J-Patil/QuickHeadlines/assets/129786110/abbf6e63-5921-48c7-9063-988d0f339132)<br><br>Home screen:<br><br>
